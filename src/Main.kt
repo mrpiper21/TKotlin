@@ -48,4 +48,18 @@ fun main() {
 
     // Checking an Empty Array
     println("Array is empty : ${fruits.isEmpty()}")
+
+    // Ranges
+    for(num in 1.rangeTo(4)){
+        println(num)
+    }
+    //OR
+    for(num in 1..4){
+        println(num)
+    }
+
+    // Backward range
+    for(num in 4 downTo 1){
+        println(num)
+    }
 }
