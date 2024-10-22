@@ -62,4 +62,22 @@ fun main() {
     for(num in 4 downTo 1){
         println(num)
     }
+
+    println((5..10).first)
+    println((5..10 step 2).step)
+    println((5..10).reversed().last)
+
+    val a = 1..10
+    val f = a.filter { Item -> Item % 2 == 0 }
+    println("filtered ${f}")
+
+    val b = listOf(1, 1, 2, 2, 4, 5, 4, 6, 20)
+    println("Distinct ${b.distinct()}")
+
+    val c = 1..10
+    println("min ${c.min()}")
+    println("max ${c.max()}")
+    println("sum ${c.sum()}")
+    println("average ${c.average()}")
+    println("count ${c.count()}")
 }
